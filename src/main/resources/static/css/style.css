@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+.primary-color{
+	color:#3EB489
+}
+.secondary-color{
+	color:#65463E
+}
+
+#wrap{
+	padding-top:150px;
+	font-family: 'Nanum Gothic Coding', monospace;
+	height:1300px;
+	margin:auto;
+	
+}
+.signup-form-box{
+	width:600px;
+	border: 1px solid #267055;
+	margin:auto;
+}
+hr{
+	border-width:1px;
+	background-color:#65463E;
+}
+
+#isDuplicateBtn{
+	position:relative;
+	left:405px;
+}
+.input-group-activity-level{
+	position:relative;
+	left:94px;
+	
+}
+.input-group-gender{
+	position:relative;
+	left:94px;
+}
+#registerBtn{
+	position:relative;
+	left:238px;
+}
+.signin-link-box{
+	border: 1px solid #267055;
+	width:600px;
+	margin:auto;
+}
