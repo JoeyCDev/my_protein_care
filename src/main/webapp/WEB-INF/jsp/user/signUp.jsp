@@ -108,7 +108,7 @@
 						</form>
 				</div>
 				<div class="signin-link-box text-center p-3 mt-4">
-					<small>계정이 있으신가요? <a href="#">로그인</a></small>
+					<small>계정이 있으신가요? <a href="/user/signin_view">로그인</a></small>
 				</div>
 			</section>
 			<c:import url="/WEB-INF/jsp/include/footer.jsp"/>

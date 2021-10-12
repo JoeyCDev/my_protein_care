@@ -24,6 +24,9 @@ header{
 	margin:auto;
 	
 }
+
+/* 회원가입 */
+
 .signup-form-box{
 	width:600px;
 	border: 1px solid #267055;
@@ -55,6 +58,19 @@ hr{
 	left:238px;
 }
 .signin-link-box{
+	border: 1px solid #267055;
+	width:600px;
+	margin:auto;
+}
+
+/* 로그인 */
+
+.signin-form-box{
+	width:600px;
+	border: 1px solid #267055;
+	margin:auto;
+}
+.signup-link-box{
 	border: 1px solid #267055;
 	width:600px;
 	margin:auto;

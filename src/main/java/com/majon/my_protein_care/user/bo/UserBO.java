@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.majon.my_protein_care.common.EncryptUtils;
 import com.majon.my_protein_care.user.dao.UserDAO;
+import com.majon.my_protein_care.user.model.User;
 
 @Service
 public class UserBO {
@@ -29,6 +30,13 @@ public class UserBO {
 			return false;
 		}
 		
+	}
+	
+	public User getUserByLoginIdAndPassword(String loginId, String password) {
+		
+		String encryptPassword = EncryptUtils.md5(password);
+		
+		return userDAO.selectUserByLoginIdAndPassword(loginId, encryptPassword);
 	}
 	
 }
