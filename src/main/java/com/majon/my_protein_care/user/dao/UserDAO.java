@@ -15,4 +15,6 @@ public interface UserDAO {
 			,@Param("weight") double weight
 			,@Param("activityLevel") String activityLevel
 			,@Param("gender") String gender);
+	
+	public int countDuplicateLoginId(@Param("loginId") String loginId);
 }

@@ -42,6 +42,10 @@
 								<label class="col-2 label-id"><small>아이디</small></label>
 								<input type="text" id="idInput" class="form-control col-6">
 							</div>
+							<div class="hidden-msg-container">
+								<small class="text-danger d-none" id="duplicate-msg">중복된 id입니다</small>
+								<small class="text-success d-none" id="non-duplicate-msg">사용 가능한 id입니다</small>
+							</div>
 							<button id="isDuplicateBtn" type="button" class="btn btn-sm btn-primary mb-2"><small>중복확인</small></button>
 							<div class="label-input-group d-flex align-items-center justify-content-center mb-4">
 								<label class="col-2"><small>성명</small></label>
@@ -113,6 +117,58 @@
 <script>
 
 	$(document).ready(function(){
+		
+		var isDuplicateBtnChecked = false;
+		var isDuplicateId = true;
+		
+		//중복체크 기능 초기화 
+		$("#idInput").on("keyup",function(e){
+				
+				e.preventDefault();
+				
+				isDuplicateBtnChecked = false;
+				isDuplicateId = true;
+				
+			});
+		
+		
+		//중복확인 기능
+		$("#isDuplicateBtn").on("click",function(e){
+				
+				e.preventDefault();
+				
+				var loginId = $("#idInput").val().trim();
+				
+				if(loginId==null||loginId==""){
+					alert("아이디를 입력하세요.");
+					return;
+				}
+				
+				$.ajax({
+					
+					type:"get",
+					url:"/user/isDuplicate",
+					data:{"loginId":loginId},
+					success:function(data){
+						isDuplicateBtnChecked = true;
+						if(data.isDuplicate){
+							$("#duplicate-msg").removeClass("d-none");
+							$("#non-duplicate-msg").addClass("d-none");
+							isDuplicateId = true;
+						}else{
+							$("#non-duplicate-msg").removeClass("d-none");
+							$("#duplicate-msg").addClass("d-none");
+							isDuplicateId = false;
+						}
+						
+					},
+					error:function(e){
+						alert("error");
+					}
+					
+				});
+				
+			});
 		
 		//키 정수세자리 이하 소숫점 한자리 이하 형태로 표현 ex)180.1
 		$("#heightInput").off("keypress").on("keypress",function(e){
@@ -246,6 +302,14 @@
 			}
 			if(gender==undefined){
 				alert("성별을 선택하세요");
+				return;
+			}
+			if(!isDuplicateBtnChecked){
+				alert("아이디 중복확인을 해주세요.");
+				return;
+			}
+			if(isDuplicateId){
+				alert("중복되지 않은 아이디를 입력하세요.");
 				return;
 			}
 			

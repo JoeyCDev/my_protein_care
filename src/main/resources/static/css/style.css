@@ -33,7 +33,10 @@ hr{
 	border-width:1px;
 	background-color:#65463E;
 }
-
+.hidden-msg-container{
+	position:relative;
+	left:190px;
+}
 #isDuplicateBtn{
 	position:relative;
 	left:405px;

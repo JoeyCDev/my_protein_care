@@ -36,4 +36,14 @@
  		
  	</insert>
  	
+ 	<select id="countDuplicateLoginId" parameterType="String" resultType="int">
+ 	
+ 		SELECT 
+ 			count(*)
+ 		FROM
+ 			`user`
+ 		WHERE 
+ 			`loginId` = #{loginId}
+ 	</select>
+ 	
  </mapper>
