@@ -34,7 +34,7 @@
 		<c:import url="/WEB-INF/jsp/include/header.jsp"/>
 		<section class="main mb-5">
 			<div class="signin-form-box p-3">
-				<h1 class="font-primary-color text-center mt-2 mb-3"><b>로그인</b></h1>
+				<h1 class="form-primary-color text-center mt-2 mb-3"><b>로그인</b></h1>
 				<form id="signInForm">
 					<div class="label-input-groupd d-flex align-items-center justify-content-center mb-1">
 						<label class="col-2 label-id"><small>아이디</small></label>

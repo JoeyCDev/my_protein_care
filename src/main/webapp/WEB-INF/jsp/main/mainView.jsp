@@ -31,9 +31,53 @@
 </head>
 <body>
 
-	<div id="wrap" >
+	<div id="wrapMain" >
 		<c:import url="/WEB-INF/jsp/include/headerMain.jsp"/>
-		<c:import url="/WEB-INF/jsp/include/footer.jsp"/>
+		<div id="section">
+			<article class="article1">
+				<h1>일일 단백질 계산기</h1>
+				<div class="content">
+				</div>
+			</article>
+			<article class="article2">
+				<h1>단백질 섭취량 기록하기</h1>
+				<div class="content">
+				</div>
+			</article>
+			<article class="article3">
+				<h1>고단백 음식 포스팅 보기</h1>
+				<div class="content">
+				</div>
+			</article>
+			<article class="article4">
+				<h1>고단백 음식 포스팅 하기</h1>
+				<div class="content">
+				</div>
+			</article>
+			<article class="article5">
+				<h1>주요 단백질 음식 정보</h1>
+				<div class="content">
+				</div>
+			</article>
+			<article class="article6">
+				<h1>저장된 고단백 음식 리스트</h1>
+				<div class="content">
+				</div>
+			</article>
+			<article class="article7">
+				<h1>참고자료</h1>
+				<div class="content">
+				</div>
+			</article>
+			<article class="article8">
+				<h1>단백질 섭취량 그래프</h1>
+				<div class="content">
+				</div>
+			</article>
+		</div>
+		<footer id="mainFooter" class="text-center">
+			<small>Copyright 2021. MyProteinCare. all rights reserved.</small>
+		</footer>
 	</div>
 </body>
 </html>

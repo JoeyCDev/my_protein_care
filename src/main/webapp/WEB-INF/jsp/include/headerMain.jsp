@@ -19,7 +19,7 @@
 		</div>
 	</div>
 	<header class="text-center mb-5">
-		<h1 class="display-3 primary-color"><span class="secondary-color">My</span>Protein<span class="secondary-color">Care</span></h1>
+		<h1 class="display-3 font-primary-color"><span class="secondary-color">My</span>Protein<span class="secondary-color">Care</span></h1>
 	</header>
 	
 

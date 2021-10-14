@@ -36,7 +36,7 @@
 			<section class="main mb-5">
 				<div class="signup-form-box p-3">
 					<div class="signup-form-top mb-4">
-						<h1 class="font-primary-color text-center mt-2 mb-3"><b>회원가입</b></h1>
+						<h1 class="form-primary-color text-center mt-2 mb-3"><b>회원가입</b></h1>
 						<form id="signUpForm">
 							<div class="label-input-groupd d-flex align-items-center justify-content-center mb-1">
 								<label class="col-2 label-id"><small>아이디</small></label>
@@ -70,7 +70,7 @@
 					    </div>
 						<hr class="mb-4">
 						<div class="signup-form-bottom">
-							<h2 class="font-primary-color text-center mb-3">세부사항 입력</h2>
+							<h2 class="form-primary-color text-center mb-3">세부사항 입력</h2>
 							<div class="label-input-group d-flex align-items-center justify-content-center mb-3">
 								<label class="col-2"><small>키</small></label>
 								<input type="text" id="heightInput" placeholder="소숫점 한자리(cm) ex)180.0cm" class="form-control col-6">
