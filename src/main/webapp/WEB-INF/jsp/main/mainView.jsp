@@ -35,7 +35,7 @@
 		<c:import url="/WEB-INF/jsp/include/headerMain.jsp"/>
 		<div id="section">
 			<article class="article1">
-				<h1>일일 단백질 계산기</h1>
+				<h1>단백질 섭취량 그래프</h1>
 				<div class="content">
 				</div>
 			</article>
@@ -70,7 +70,7 @@
 				</div>
 			</article>
 			<article class="article8">
-				<h1>단백질 섭취량 그래프</h1>
+				<h1>일일 단백질 계산기</h1>
 				<div class="content">
 				</div>
 			</article>
@@ -79,5 +79,12 @@
 			<small>Copyright 2021. MyProteinCare. all rights reserved.</small>
 		</footer>
 	</div>
+<script>
+	$(".article8").on("click",function(){
+		
+		location.href="/protein/calculator_view";
+		
+	});
+</script>
 </body>
 </html>

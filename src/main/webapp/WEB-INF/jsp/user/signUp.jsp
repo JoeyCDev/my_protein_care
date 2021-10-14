@@ -171,7 +171,7 @@
 			});
 		
 		//키 정수세자리 이하 소숫점 한자리 이하 형태로 표현 ex)180.1
-		$("#heightInput").off("keypress").on("keypress",function(e){
+		$("#heightInput").on("keypress",function(e){
 			var height = $("#heightInput").val();
 			var pressedKey = e.which;
 			//정규식 활용해서 숫자만 입력받도록
@@ -190,7 +190,8 @@
 			if(_pattern2.test(height)){
 				// . 이 아닐시
 				if(pressedKey!=46){
-					alert("1000이하의 숫자만 입력가능합니다.")
+					alert("1000이하의 숫자만 입력가능합니다.");
+					
 					return false;
 				}
 			}
@@ -327,6 +328,7 @@
 					"gender":gender},
 				success:function(data){
 					if(data.result=="success"){
+						location.href="/user/signin_view";
 						alert("회원가입 성공");
 					}else{
 						alert("회원가입 실패");

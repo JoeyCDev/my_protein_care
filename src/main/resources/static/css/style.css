@@ -41,15 +41,15 @@ header{
 #section{
 	position:absolute;
 	width:600px;
-	height:800px;
+	height:700px;
 	top:50%;
 	left:50%;
-	margin: -400px 0px 0px -300px;
+	margin: -320px 0px 0px -300px;
 }
 #mainFooter{
 	position:absolute;
 	bottom:5%;
-	left:45%;
+	left:42%;
 }
 #wrapMain #section article{
 	position:absolute;
@@ -61,14 +61,15 @@ header{
 #wrapMain #section article h1{
 	position:absolute;
 	top:0;
-	left:25%;
+	left:30%;
 	color:#267055;
 	opacity:0;
 	transition:1s;
 	font-family: 'Gamja Flower', cursive;
+	font-size:30px;
 }
 #wrapMain #section article:hover h1{
-	top:-60px;
+	top:-50px;
 	opacity:1;
 }
 #wrapMain #section article .content{
@@ -84,7 +85,16 @@ header{
 #wrapMain #section article .content:hover{
 	background:#D2E5D0;
 	opacity:1;
-	transform:scale(1.03);
+	transform:scale(1.02);
+}
+/*article 겹치는 요소 */
+
+.article-title{
+	color:#267055;
+}
+.article-label{
+	color:#DCBAA9;
+	font-weight:bold;
 }
 .article1{
 	display:block;
@@ -162,4 +172,17 @@ hr{
 	border: 1px solid #267055;
 	width:600px;
 	margin:auto;
+}
+
+/* 단백질 계산기 */
+.calculator-element{
+	width:800px;
+}
+
+#addMoreBtn{
+	background-color:#D2E5D0;
+	color:#65463E;
+}
+.calculator-h4{
+	color:#267055;
 }
